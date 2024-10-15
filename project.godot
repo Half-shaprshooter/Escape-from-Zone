@@ -10,10 +10,16 @@ config_version=5
 
 [application]
 
-config/name="Escape from zone"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/name="EscapeFromZone"
+run/main_scene="res://Scenes/SceneWithCharacter.tscn"
+config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Escape from zone"
+project/assembly_name="EscapeFromZone"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
