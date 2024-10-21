@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://bn4eknb6ftx3j"]
+
+[ext_resource type="Script" path="res://scripts/box.gd" id="1_3oxwf"]
+[ext_resource type="Texture2D" uid="uid://2kuhnxjl74e7" path="res://sprites/box.png" id="1_kmnc4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2vl2g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t8mg"]
+size = Vector2(48.4873, 50.0611)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4dequ"]
+polygon = PackedVector2Array(-25, -21, 26, -22, 26, 29, -23, 29, -23.4529, 17.6781)
+
+[node name="Box" type="Node2D"]
+material = SubResource("ShaderMaterial_2vl2g")
+script = ExtResource("1_3oxwf")
+
+[node name="Box" type="Sprite2D" parent="."]
+visible = false
+light_mask = 4
+visibility_layer = 4
+position = Vector2(1, 4)
+texture = ExtResource("1_kmnc4")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.756346, 3.96947)
+shape = SubResource("RectangleShape2D_4t8mg")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 1)
+occluder = SubResource("OccluderPolygon2D_4dequ")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 4)
+shape = SubResource("RectangleShape2D_4t8mg")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

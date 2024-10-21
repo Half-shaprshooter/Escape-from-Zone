@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d3da51f-c801-440a-9a54-73ca2977f31e" name="Changes" comment="" />
+    <list default="true" id="1d3da51f-c801-440a-9a54-73ca2977f31e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.escapefromzone.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.escapefromzone.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/SceneWithCharacter.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SceneWithCharacter.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/PlayerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/PlayerControl.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,7 @@
     &quot;.NET Executable.Player.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Kirill&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,7 +109,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1ae797f9-ce4c-4958-932e-e57c4b83d6c5" name="Changes" comment="" />
+      <changelist id="1d3da51f-c801-440a-9a54-73ca2977f31e" name="Changes" comment="" />
       <created>1728469390687</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -114,6 +119,12 @@
       <workItem from="1728477440431" duration="292000" />
       <workItem from="1728477746962" duration="795000" />
       <workItem from="1729005376623" duration="928000" />
+      <workItem from="1729008156779" duration="1538000" />
+      <workItem from="1729500628988" duration="10181000" />
+      <workItem from="1729515896439" duration="3872000" />
+      <workItem from="1729523957767" duration="620000" />
+      <workItem from="1729526701113" duration="125000" />
+      <workItem from="1729530843419" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

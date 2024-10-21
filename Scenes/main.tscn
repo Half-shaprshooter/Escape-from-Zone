@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://r41m36oj85w4"]
+
+[ext_resource type="Texture2D" uid="uid://dc7fjv8yptwi0" path="res://sprites/grass.jpg" id="1_xb5bj"]
+[ext_resource type="PackedScene" uid="uid://djh6mt40wbkm8" path="res://Scenes/SceneWithCharacter.tscn" id="2_pu6ya"]
+[ext_resource type="PackedScene" uid="uid://bn4eknb6ftx3j" path="res://Scenes/box.tscn" id="3_aqc7k"]
+
+[node name="main" type="Node2D"]
+
+[node name="grass" type="Node2D" parent="."]
+
+[node name="Grass" type="Sprite2D" parent="grass"]
+position = Vector2(44, 30)
+scale = Vector2(1.14531, 1.075)
+texture = ExtResource("1_xb5bj")
+
+[node name="Grass5" type="Sprite2D" parent="grass"]
+position = Vector2(48, 417)
+scale = Vector2(1.14531, 1.075)
+texture = ExtResource("1_xb5bj")
+
+[node name="Grass4" type="Sprite2D" parent="grass"]
+position = Vector2(-686, 28)
+scale = Vector2(1.14531, 1.075)
+texture = ExtResource("1_xb5bj")
+
+[node name="Grass3" type="Sprite2D" parent="grass"]
+position = Vector2(776, 30)
+scale = Vector2(1.14531, 1.075)
+texture = ExtResource("1_xb5bj")
+
+[node name="Grass2" type="Sprite2D" parent="grass"]
+position = Vector2(44, -358)
+scale = Vector2(1.14531, 1.075)
+texture = ExtResource("1_xb5bj")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.203922, 0.203922, 0.203922, 1)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_pu6ya")]
+position = Vector2(-31, -47)
+
+[node name="Box" parent="." instance=ExtResource("3_aqc7k")]
+light_mask = 512
+visibility_layer = 512
+position = Vector2(227, -50)
